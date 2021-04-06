@@ -36,7 +36,7 @@ public class Dao_Reserva {
             = "call listar_reservas_por_usuario(?);";
 
     private static final String CMD_LISTAR_TODOS_TIQUETES
-            = "call llistar_tiquetes_por_fechavuelo(?);";
+            = "call listar_tiquetes_por_fechavuelo(?);";
 
     public static Dao_Reserva obtenerInstancia() {
         if (instancia == null) {

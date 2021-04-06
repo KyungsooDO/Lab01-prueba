@@ -62,4 +62,11 @@ public class Ciudad {
         this.vueloList1 = vueloList1;
     }
 
+    @Override
+    public String toString() {
+        return  nombre;
+    }
+    
+    
+
 }

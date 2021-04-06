@@ -113,4 +113,10 @@ public class Vuelo {
         this.ciudad1 = ciudad1;
     }
 
+    @Override
+    public String toString() {
+        return "Vuelo{" + "idVuelo=" + idVuelo + ", dia=" + dia + ", hora=" + hora + ", duracion=" + duracion + ", fechavueloList=" + fechavueloList + ", avion=" + avion + ", ciudad=" + ciudad + ", ciudad1=" + ciudad1 + '}';
+    }
+    
+
 }
