@@ -1,16 +1,146 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Airline WAP</title>
+</head>
+
+<body>
+  <!--Barra de Navegación-->
+  <div class="wrapper">
+    <header>
+      <a href="index.html" class="logo"> LOGO</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Book</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="signin">Sign In</a></li>
+      </ul>
+    </header>
+    <!-- Barra de navegación -->
+    <img src="images/background02.jpg">
+
+    <!-- Barra para busqueda de tiquetes -->
+    <div class="content">
+      <div class="btn-box">
+        <button id="btn1" onclick="openFlight()">Flight</button>
+        <button id="btn2" onclick="openCheckIn()">Check-in Online</button>
+        <button id="btn3" onclick="openStatus()">Flights Status</button>
+      </div>
+
+      <!-- Flights tabs-->
+      <div id="tab1" class="tabs-forms-flight">
+        <form action="#">
+
+          <div class="texto">
+            <input type="text" name="origen" required>
+            <div class="placeholder">From</div>
+          </div>
+
+          <div class="texto">
+            <input type="text" name="destino" required>
+            <div class="placeholder">To</div>
+          </div>
+
+          <div class="container">
+            <div class="texto">
+              <input type="date" name="fecha-salida" required>
+              <div class="placeholder-1">Departure date</div>
+            </div>
+            <div class="texto">
+              <input type="date" name="fecha-regreso" required>
+              <div class="placeholder-1">Return date</div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="texto">
+              <input type="number" name="pasajeros" required>
+              <div class="placeholder">Passengers</div>
+            </div>
+            <div class="texto">
+              <input type="text" name="clase" required>
+              <div class="placeholder">Class</div>
+            </div>
+          </div>
+
+          <button class="btn" type="submit" formaction="#">
+            Search Flight
+          </button>
+        </form>
+      </div>
+
+      <!-- Check in tabs-->
+      <div id="tab2" class="tabs-forms-flight">
+        <form action="#">
+
+          <div class="texto">
+            <input type="text" name="cod-reserva" required>
+            <div class="placeholder">Use my reservation code</div>
+          </div>
+
+          <div class="texto">
+            <input type="text" name="apellido" required>
+            <div class="placeholder">Last Name</div>
+          </div>
+
+          <div class="container">
+            <div class="texto">
+              <input type="date" name="fecha-salida" required>
+              <div class="placeholder-1">Departure date</div>
+            </div>
+          </div>
+
+          <button class="btn" type="submit" formaction="#">
+            Continue
+          </button>
+        </form>
+      </div>
+
+      <!-- Flights Status Tabs-->
+      <div id="tab3" class="tabs-forms-flight">
+        <form action="#">
+
+          <div class="texto">
+            <input type="text" name="origen" required>
+            <div class="placeholder">From</div>
+          </div>
+
+          <div class="texto">
+            <input type="text" name="destino" required>
+            <div class="placeholder">To</div>
+          </div>
+
+          <div class="container">
+            <div class="texto">
+              <input type="date" name="fecha-salida" required>
+              <div class="placeholder-1">Date Flight</div>
+            </div>
+          </div>
+
+          <button class="btn" type="submit" formaction="#">
+            Check Status
+          </button>
+        </form>
+      </div>
+
+    </div>
+    <!-- FIN de la Barra para busqueda de tiquetes -->
+    <a href="#sec-disc">
+      <div class="scroll-down"></div>
+    </a>
+  </div>
+  <section id="sec-disc" class="sec-disc">
+    <h1>Flight offers</h1>
+    <button> boton</button>
+  </section>
+</body>
+
 </html>
